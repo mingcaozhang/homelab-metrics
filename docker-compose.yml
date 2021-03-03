@@ -32,10 +32,12 @@ services:
       - ./grafana/provisioning/:/etc/grafana/provisioning/
     restart: always
 
-  pwrstat-exporter:
-    image: pwrstat-exporter
-    container_name: pwrstat-exporter
+  nut-exporter:
+    image: mingcaozhang/nut-exporter:0.1.0
+    container_name: nut-exporter
     ports:
       - 9185:9185
-    devices:
-      - /dev/usb/hiddev0
+    environment:
+      - UPS_NAME=CP1500
+      - UPSD_HOST=192.168.88.222
+      - UPSD_PORT=3493
