@@ -15,7 +15,7 @@
   "editable": true,
   "gnetId": null,
   "graphTooltip": 0,
-  "id": 1,
+  "id": 2,
   "links": [],
   "panels": [
     {
@@ -66,7 +66,7 @@
           "calcs": [
             "lastNotNull"
           ],
-          "fields": "/^power_draw\\{instance=\"pwrstat\\-exporter:9185\", job=\"pwrstat-exporter\"\\}$/",
+          "fields": "",
           "values": false
         },
         "text": {},
@@ -165,8 +165,16 @@
             "mode": "absolute",
             "steps": [
               {
-                "color": "grey",
+                "color": "red",
                 "value": null
+              },
+              {
+                "color": "yellow",
+                "value": 5
+              },
+              {
+                "color": "green",
+                "value": 15
               }
             ]
           },
