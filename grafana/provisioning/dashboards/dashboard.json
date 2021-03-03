@@ -170,7 +170,7 @@
               }
             ]
           },
-          "unit": "m"
+          "unit": "s"
         },
         "overrides": []
       },
@@ -199,7 +199,7 @@
       "pluginVersion": "7.4.3",
       "targets": [
         {
-          "expr": "remaining_runtime",
+          "expr": "battery_runtime",
           "interval": "",
           "legendFormat": "",
           "refId": "A"
@@ -337,5 +337,5 @@
   "timezone": "",
   "title": "Homelab Metrics",
   "uid": "4PlHjQyGk",
-  "version": 6
+  "version": 2
 }
